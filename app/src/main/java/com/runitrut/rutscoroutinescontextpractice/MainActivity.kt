@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-        /* This is a Normal Coroutine CALLING the SUSPEND FUNCTION*/
+        /* This is a Normal Coroutine CALLING the SUSPEND FUNCTION suspend fun doNetWorkCall(): String */
         GlobalScope.launch {
             val networkcall = doNetWorkCall()
             Log.d(TAG, networkcall)
